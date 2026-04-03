@@ -20,13 +20,6 @@
   <img src="https://skillicons.dev/icons?i=html,css,figma,js,postgres,git,github,vscode&theme=dark" />
 </div>
 <!-- footer -->
-<div align='center'>
-<div align="center">  
-  <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=raphael-de-souza-tech&layout=compact&title_color=80F7D4&text_color=fff&bg_color=0d1117&border_color=fff0" />
-  
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=raphael-de-souza-tech&show_icons=true&count_private=true&title_color=80F7D4&icon_color=9d00ff&text_color=c9d1d9&bg_color=0d1117&border_color=fff0" /> 
-</div>
-</div>
 <div align="center">
 <h5> Livre seu coração da raiva e do medo e não ambicione se não o melhor de si mesmo. <br>
 <strong>Marco Aurelio _ Meditações.</strong></h5>
