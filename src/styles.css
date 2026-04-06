@@ -37,9 +37,23 @@
     gap: 20px;
     margin-bottom: 50px;
 }
+.lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 ul{
-    margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding: 2rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 ul li{
     display: flex;
@@ -48,16 +62,19 @@ ul li{
     cursor: pointer;
 }
 input{
+    
     margin: 0;
     border: 2px solid black;
     border-radius: 2rem;
-    width: 20%;
+    width: 30%;
     padding: 5px;
     float: center;
     font-size: 24px;
 }
 
 .addBtn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
     padding: 3px;
     width: 15%;
     background: #000000 ;
@@ -70,10 +87,38 @@ input{
     transition: 0.3s;
 }
 .addBtn:hover{
-    background:  #000000;
-    color: white;
+    background:  #ffffff;
+    color: rgb(0, 0, 0);
+}
+.button-container{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* gap: 20px; */
+    /* margin-bottom: 50px; */
+}
+#info-btn:hover{
+    background:  #ffffff;
+    color: rgb(0, 0, 0);
+}
+#info-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding: 3px;
+    width: 20%;
+    background: #000000 ;
+    color: #ffffff;
+    /* float: right; */
+    /* text-align: center; */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 1rem;
+    transition: 0.3s;
 }
 
+
 .close{
+    padding: 3px;
     margin-left: 20px;
 }

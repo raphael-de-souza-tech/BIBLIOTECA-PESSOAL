@@ -44,4 +44,43 @@ for(i=0; i< close.length; i++){
         div.style.display = "none"
     }
 };
+// // // // // 
 
+
+
+// aqui farei o botão de informações sobre o livro, usando api da OpenLibrary
+// const apiKey = "" ;
+// const btnInfo = document.getElementById("info-btn");
+
+// btnInfo.addEventListener("click", ()=>{
+//     console.log("eai");
+// })
+
+function getInfo(){
+    document.getElementById("output").innerHTML = "";
+    
+    fetch("https://openlibrary.org/search.json?q=" + document.getElementById("myInput").value)
+    .then(res => res.json())
+    .then(response => {
+
+        for(let i = 0; i < 3; i++){
+
+            let book = response.docs[i];
+
+            let title = book.title;
+            let author = book.author_name ? book.author_name[0] : "Autor desconhecido";
+
+            // 👇 aqui é o segredo
+            let img = book.cover_i 
+                ? "https://covers.openlibrary.org/b/id/" + book.cover_i + "-M.jpg"
+                : "https://via.placeholder.com/150x220?text=Sem+Capa";
+
+            document.getElementById("output").innerHTML += `
+                <h2>${title}</h2>
+                <p>${author}</p>
+                <img src="${img}">
+                <hr>
+            `;
+        }
+    })
+}
