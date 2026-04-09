@@ -45,17 +45,10 @@ for(i=0; i< close.length; i++){
     }
 };
 // // // // // 
-
+// // // // // 
 
 
 // aqui farei o botão de informações sobre o livro, usando api da OpenLibrary
-// const apiKey = "" ;
-// const btnInfo = document.getElementById("info-btn");
-
-// btnInfo.addEventListener("click", ()=>{
-//     console.log("eai");
-// })
-
 function getInfo(){
     document.getElementById("output").innerHTML = "";
     
@@ -63,7 +56,7 @@ function getInfo(){
     .then(res => res.json())
     .then(response => {
 
-        for(let i = 0; i < 3; i++){
+        for(let i = 0; i < 2; i++){
 
             let book = response.docs[i];
 
@@ -79,8 +72,10 @@ function getInfo(){
                 <h2>${title}</h2>
                 <p>${author}</p>
                 <img src="${img}">
-                <hr>
+                
             `;
         }
     })
 }
+// // // // // 
+// // // // // 

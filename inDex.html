@@ -8,31 +8,36 @@
     <title>BIBLIOTECA</title>
 </head>
 <body>
+    
+    <!-- Início -->
     <div class="banner">
         <h1>Sua Biblioteca Pessoal</h1>
-        <h2>Liste aqui seus livros.</h2>
-        <img src="./src/background01.jpg" alt="">
+        <img src="./src/Jovem lendo entre livros coloridos.png" alt="">
     </div> 
-    <div id="container" class="header">
-        <input type="text" id="myInput" placeholder="Nome do Livro">
-        <span onclick="newElement()" class="addBtn">Adicionar Livro</span>
-    </div>
+    <!-- Input, botão de adicionar livros e de informações sobre -->
+    <div class="button-container">
+        <button id="info-btn" onclick="getInfo()"><img src="./src/LUPA.svg" alt="" class="btn-esquerdo"></button>
 
+        <input type="text" id="myInput" placeholder="DIGITE SEU LIVRO">
+        
+        <button onclick="newElement()" class="addBtn"><img src="./src/CORAÇÃO.svg"alt=""id="btn-direito"></button>
+    </div>
+    <!--  -->
+    
+    <!-- Saída de informações da API -->
+    <div id="output"></div>    
+    <!--  -->
+
+    <!-- Lista de livros -->
     <div class="lista">
         <ul id="minhaUL">
-            <li>Bíblia</li>
-            <li>Morro dos ventos uivantes</li>
-            <li>Frequência Vibracional</li>
+            <li>A Bíblia</li>
+            <li>1984</li>
+            <li>A Odisséia</li>
             <li>O Caibalion</li>
         </ul>
     </div>
-
-    <div class="button-container">
-        <button id="info-btn" onclick="getInfo()">Informações sobre o livro 📚</button>
-    </div>
-    <div id="output"></div>
-
-
+    <!-- Source do JavaScript -->
     <script src="./src/app.js"></script>
 </body>  
 </html>  
