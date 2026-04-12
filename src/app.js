@@ -63,15 +63,14 @@ function getInfo(){
             let title = book.title;
             let author = book.author_name ? book.author_name[0] : "Autor desconhecido";
 
-            // 👇 aqui é o segredo
             let img = book.cover_i 
                 ? "https://covers.openlibrary.org/b/id/" + book.cover_i + "-M.jpg"
                 : "https://via.placeholder.com/150x220?text=Sem+Capa";
 
             document.getElementById("output").innerHTML += `
                 <h2>${title}</h2>
-                <p>${author}</p>
                 <img src="${img}">
+                <p>${author}</p>
                 
             `;
         }
@@ -79,3 +78,6 @@ function getInfo(){
 }
 // // // // // 
 // // // // // 
+
+
+

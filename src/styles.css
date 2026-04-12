@@ -37,12 +37,13 @@
 /* INPUT E BOTÕES */
 .button-container {
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
-    gap: 0;
-    max-width: 420px;
-    margin: 0 auto;
-    /* right: 200px; */
+    max-width: 580px;
+    width: 100%;
+    left: 75%;
+    transform: translateX(-50%);
 }
 /* Botão esquerdo */
 .btn-esquerdo {
@@ -97,18 +98,70 @@ input::placeholder{
 }
 /* //// */
 /* //// */
-ul{
-    font-size: 24px;
-    padding: 2rem;
+
+/* aqui vou editar a lista de favoritos e output */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* lado a lado */
+    gap: 20px;
+    margin-top: 100px;
+    position: relative;
 }
-ul li{
+#output h2{
+    font-size: 24px;
+    font-family: "Imbue", serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#output img{
+    display: block;
+    margin: 0 auto;
+}
+#output p{
+    font-size: 18px;
+    font-family: "Imbue", serif;
+    color: rgb(251, 251, 251);
+    text-align: center;
+}
+#output{
+    position: relative;
+    z-index: 2;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+#minhaUL{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    padding: 20px;
+    gap: 30px;
+    color: rgb(251, 250, 250);
+    background-color: black;
+    list-style-type: none;
+    
 }
-
+#minhaUL li{
+    font-size: 24px;
+    font-family: "Imbue", serif;
+    gap: 200px;
+}
+/* botão de fechar na lista */
 .close{
     padding: 3px;
     margin-left: 20px;
+}
+/* //// */
+/* //// */
+
+/* card */
+.card{
+    position: absolute;
+    top: 250px;
+    left: -50px;
+    overflow: hidden;
+    opacity: 0.3;
 }
