@@ -176,3 +176,134 @@ input::placeholder{
     z-index: -1;
 }
 
+/* responsividade */
+@media (max-width: 1200px) {
+    .banner h1 {
+        font-size: 85px;
+        margin-left: 100px;
+    }
+    
+    .button-container {
+        left: 70%;
+        max-width: 520px;
+    }
+    .card, #card {
+        display: none; /* esconde cards decorativos em telas muito pequenas */
+    }
+}
+
+@media (max-width: 992px) {
+    .banner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .banner h1 {
+        margin-left: 0;
+        font-size: 70px;
+    }
+    
+    .banner img {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .button-container {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+        max-width: 480px;
+    }
+    
+    .container {
+        margin-top: 60px;
+    }
+    
+    #output {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 55px;
+        letter-spacing: 4px;
+    }
+    
+    .button-container {
+        max-width: 420px;
+    }
+    
+    .btn-esquerdo, #btn-direito {
+        width: 50px;
+        font-size: 20px;
+    }
+    
+    .button-container input {
+        font-size: 20px;
+    }
+    
+    #output {
+        grid-template-columns: 1fr;
+        padding: 35px 20px;
+    }
+    
+    #minhaUL li {
+        font-size: 20px;
+    }
+    
+    .card {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner h1 {
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+    
+    .button-container {
+        max-width: 340px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-esquerdo {
+        border-radius: 2rem;
+        border-right: 2px solid white;
+        width: 100%;
+    }
+    
+    #btn-direito {
+        border-radius: 2rem;
+        width: 100%;
+    }
+    
+    .button-container input {
+        border-radius: 2rem;
+        width: 100%;
+    }
+    
+    #output {
+        padding: 25px 15px;
+    }
+    
+    #minhaUL li {
+        font-size: 18px;
+    }
+    
+    
+}
+
+@media (max-width: 380px) {
+    .banner h1 {
+        font-size: 36px;
+    }
+    
+    .button-container {
+        max-width: 300px;
+    }
+}
